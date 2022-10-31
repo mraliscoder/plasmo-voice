@@ -27,6 +27,5 @@ rootProject.name = "PlasmoVoice"
 
 include(
     "common",
-    "fabric",
-    "forge"
+    "fabric"
 )
