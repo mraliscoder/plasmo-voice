@@ -10,7 +10,6 @@
         "MixinMouseHandler",
         "MixinPlayerEntry",
         "MixinPlayerRenderer",
-        "MixinSkinManager",
         "MixinSoundEngine"
     ],
     "injectors": {

@@ -87,12 +87,12 @@ public class VoiceSettingsScreen extends Screen {
     private static Component getTranslatedTitle() {
         Component title = Component.translatable(
                 "gui.plasmo_voice.title",
-                "Plasmo Voice " + VoiceClient.getInstance().getVersion()
+                "Voice Client " + VoiceClient.getInstance().getVersion()
         );
         Language language = Language.getInstance();
 
         if (!language.getOrDefault("gui.plasmo_voice.title").contains("%s")) {
-            return Component.literal("Plasmo Voice ")
+            return Component.literal("Voice Client ")
                     .append(Component.literal(VoiceClient.getInstance().getVersion()))
                     .append(Component.literal(" Settings"));
         }

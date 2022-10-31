@@ -142,7 +142,6 @@ modrinth {
     versionType.set(modrinthVersionType)
 
     gameVersions.addAll(modrinthSupportedVersions.split(","))
-    changelog.set(file("${rootDir}/changelog.md").readText())
     loaders.add("fabric")
     uploadFile.set(remapJar)
 
@@ -166,8 +165,6 @@ curseforge {
 
     project(closureOf<CurseProject> {
         id = curseProjectId
-        changelog = file("${rootDir}/changelog.md")
-        changelogType = "markdown"
         releaseType = curseFabricRelease
         gameVersionStrings.addAll(curseSupportedVersions.split(","))
         addGameVersion("Fabric")
